@@ -4,10 +4,12 @@ $(document).ready(function () {
  tabsItem.on('click', function(event){
   event.preventDefault();
   let activeContent = $(this).attr('href');
-  $('.visible').togggleClass('visible');
-  $(activeContent).togggleClass('visible');
-  $(this).togggleClass('tabs-item-active');
+  $('.visible').toggleClass('visible');
+  $(activeContent).toggleClass('visible');
+  $('.tabs-item-active').toggleClass('tabs-item-active');
+  $(this).toggleClass('tabs-item-active');
  });
 
 
 });
+
